@@ -46,7 +46,7 @@ File: styles.css
   flex-direction: column;
 }
 .describe {
-  text-align: right;
+  text-align: left;
 }
 .services{
   display: flex;
@@ -61,6 +61,66 @@ File: styles.css
   margin: 10px;
 }
 .services p{
+}
+.tourism {
+  display: flex;
+  text-align: right;
+}
+.tourism video{
+  margin: 10px;
+  width: 280px;
+}
+.bait{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.livebait, .coldbait,.roll {
+  display: flex;
+  flex-direction: column;
+  background: rgba(200,200,200,0.8);
+  border-style: solid;
+  border-color: black;
+  width: 100%;
+  max-width: 33%;
+  min-width: 280px;
+  text-align: center;
+  align-items: center;
+}
+
+.bait li{
+ text-align: left;
+}
+.bait h3{
+  text-decoration: underline;
+}
+.price {
+  font-style: italic;
+}
+.livebait h2, .coldbait h2, .roll h2 {
+  width: 100%;
+  flex-direction: row;
+  background-color: rgba(100,100,100,0.5);
+  line-height: 3;
+  margin-top: 0;
+  color: white;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.break {
+  display: flex;
+  flex-direction: row;
+}
+.coldbait {
+ display: flex;
+}
+.bait ul {
+  list-style: none;
+  padding: 0;
+}
+.bait li{
+  padding-bottom: 5px;
+  margin-right: 10px;
 }
 /* Footer Style */
 .contact {
@@ -98,3 +158,29 @@ a[href="tel:+19375051037"]{
   border-color: white;
 }
 /* page size style */
+@media screen and (max-width:578px) {
+  .services{
+    flex-direction: column;
+  }
+  .services img{
+    width: 100%;
+  }
+
+   .tourism{
+   flex-direction: column-reverse;
+   text-align: left;
+ }
+   .tourism video{
+   width: 100%;
+ }
+ .bait{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+ }
+ .livebait, .coldbait,.roll{
+   max-width: 100%;
+
+ }
+}
