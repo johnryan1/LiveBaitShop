@@ -34,20 +34,67 @@ File: styles.css
 .title{
   text-align: center;
   width: 100%;
-  background-color: brown;
+  background-image: radial-gradient(white, tan);
+  line-height: 3;
+  margin: 0px;
+  border-style: solid;
+  border-color: brown;
 }
 /* Body  Style */
-body {
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.describe {
+  text-align: right;
+}
+.services{
+  display: flex;
+}
+.services img{
+  justify-content: center;
+  width: 280px;
+  height: 100%;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: tan;
+  margin: 10px;
+}
+.services p{
 }
 /* Footer Style */
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-style: solid;
+}
+a[href="mailto:howardslakeside@gmail.com"]{
+  color: inherit;
+}
+a[href="tel:+19375051037"]{
+  color: inherit;
+}
 .contact p {
-  background: red;
+  margin: 10px;
   text-align: center;
-  line-height: 2;
+  line-height: 1;
   align-items: center;
 }
 .contact img {
   width: 28px;
   margin: 10px;
+}
+.social{
+  align-self: flex-end;
+  background-color: white;
+  border-style: solid;
+  border-color: blue;
+}
+.social:hover{
+  align-self: flex-end;
+  border-color: white;
 }
 /* page size style */
