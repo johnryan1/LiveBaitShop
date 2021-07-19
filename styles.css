@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@font-face {
+  font-family: sans-serif;
+}
+/*
+Name: John Ryan
+Date: July 2021
+File: styles.css
+*/
+/* HTML style */
+/* Header Style */
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.pages a{
+  background: lightgrey;
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: silver;
+}
+.pages a:hover{
+  background: silver;
+}
+.pages a:visited{
+  color:inherit;
+}
+.title{
+  text-align: center;
+  width: 100%;
+  background-color: brown;
+}
+/* Body  Style */
+body {
+}
+/* Footer Style */
+.contact p {
+  background: red;
+  text-align: center;
+  line-height: 2;
+  align-items: center;
+}
+.contact img {
+  width: 28px;
+  margin: 10px;
+}
+/* page size style */
