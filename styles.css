@@ -74,6 +74,9 @@ File: styles.css
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+  background-image: url("bait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .livebait, .coldbait,.roll {
   display: flex;
@@ -87,7 +90,15 @@ File: styles.css
   text-align: center;
   align-items: center;
 }
+.main p {
+  font-size: 25px;
+  
+}
+.roll p{
+  font-size: 30px;
+  margin: 10px;
 
+}
 .bait li{
  text-align: left;
 }
